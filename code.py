@@ -1,9 +1,13 @@
+import getpass # to generate encrypted word so that other can not see
+
 lives = 10
-word = "Apple".lower()
+word = getpass.getpass("Player 1 will enter a word to guess: ").lower()
 listword = list(word)
 
 i=0
 print(f"Your main word contain {len(word)} letter")
+hint = "An ___ a day keeps the doctor away."
+print(hint)
 while(i!=len(word)):
     if lives == 0 :
         break
@@ -16,6 +20,6 @@ while(i!=len(word)):
         print(f"oh.. wrong! You lost your one life left with {lives} lives")
     
 if lives == 0 :
-    print("Hey you lost the game😢")
+    print(f"Hey you lost the game😢 the word was {word}")
 else:
     print(f"Hey you won the game with {lives} lives😎")
