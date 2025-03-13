@@ -20,6 +20,7 @@ while(i!=len(word)):
     else:
         lives -= 1
         print(f"oh.. wrong! You lost your one life left with {lives} lives")
+        print(f"{letter} is incorrect word")
         print(final)
     
 if lives == 0 :
