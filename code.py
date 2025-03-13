@@ -3,7 +3,8 @@ import getpass # to generate encrypted word so that other can not see
 lives = 10
 word = getpass.getpass("Player 1 will enter a word to guess: ").lower()
 listword = list(word)
-final = ""
+final = ["_"]*len(listword)
+print(final)
 
 i=0
 print(f"Your main word contain {len(word)} letter")
@@ -13,7 +14,7 @@ while(i!=len(word)):
     letter = input("Guess the letter:")
     if(letter == listword[i]):
         print(f"You guessed the write word {letter} now guess next word")
-        final = final + listword[i]
+        final[i] = letter
         print(final)
         i += 1
     else:
