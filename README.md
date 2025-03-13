@@ -1,3 +1,2 @@
-# Hangman---guess-the-word
 # Hangman Game Description
 This Python script implements a simple Hangman game where the player has to guess the letters of a given word. The game starts with 10 lives. The word to guess is "apple," converted to lowercase. The player is prompted to guess each letter in sequence. If the guessed letter is correct, the player moves on to the next letter. If the guess is incorrect, the player loses a life. The game continues until the player either guesses all the letters correctly or runs out of lives. The script provides feedback on the player's progress and remaining lives.
