@@ -16,7 +16,7 @@ while i < len(word):
         final[i] = letter
         print(f"You guessed the right word {letter}.")
         print(f"You have {len(listword) - 1 - i} letters left to guess.")
-        print(final)
+        print(final,"\n")
         i += 1
         if i == len(word):  # Check if the game is won
             break
@@ -25,7 +25,7 @@ while i < len(word):
         print("Oh.. wrong!")
         print(f"{letter} is an incorrect word.")
         print(f"Left with {lives} lives.")
-        print(final)
+        print(final ,"\n")
 
 if lives == 0:
     print(f"Hey, you lost the game 😢 The word was {word}")
