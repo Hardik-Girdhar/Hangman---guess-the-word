@@ -17,12 +17,18 @@ The getpass module is used to securely input the word without displaying it on t
 
 
 ### Game Loop
-The game informs the player of the number of letters in the word.
-The player guesses letters one by one.
-If the guessed letter matches the current letter in the word, it is added to the final string, and the player is prompted to guess the next letter.
-If the guessed letter is incorrect, the player loses a life.
-The loop continues until the player either guesses the entire word or runs out of lives.
+> The game informs the player of the number of letters in the word.
+
+> The player guesses letters one by one.
+
+> If the guessed letter matches the current letter in the word, it is added to the final string, and the player is prompted to guess the next letter.
+
+> If the guessed letter is incorrect, the player loses a life.
+
+> The loop continues until the player either guesses the entire word or runs out of lives.
+
 
 ### End of Game
-If the player runs out of lives, a message is displayed indicating they lost and revealing the word.
-If the player guesses the word correctly, a congratulatory message is displayed along with the remaining lives.
+> If the player runs out of lives, a message is displayed indicating they lost and revealing the word.
+
+> If the player guesses the word correctly, a congratulatory message is displayed along with the remaining lives.
